@@ -29,6 +29,7 @@ bool checkPermutation(std::string first, std::string second)
             return false;
         }
     }
+    std::cout<<storage.keySet()<<std::endl;
 
     return true;
 }
