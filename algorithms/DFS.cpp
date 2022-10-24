@@ -31,16 +31,27 @@ void Graph::DFS(int v)
 int main()
 {
     Graph g;
-    g.addEdge(0, 1);
-    g.addEdge(0, 2);
-    g.addEdge(1, 2);
-    g.addEdge(2, 0);
-    g.addEdge(2, 3);
-    g.addEdge(3, 3);
+    g.addEdge(6, 4);
+    g.addEdge(5, 4);
+    g.addEdge(5, 1);
+    g.addEdge(5, 2);
+    g.addEdge(4, 6);
+    g.addEdge(4, 5);
+    g.addEdge(4, 3);
+    g.addEdge(3, 4);
+    g.addEdge(3, 2);
+    g.addEdge(2, 1);
+    g.addEdge(2, 5);
 
-    std::cout << "El camino comenzando por el nodo 2 es:" << std::endl;
+    // g.addEdge(0, 2);
+    // g.addEdge(1, 2);
+    // g.addEdge(2, 0);
+    // g.addEdge(2, 3);
+    // g.addEdge(3, 3);
 
-    g.DFS(2);
+    std::cout << "El camino comenzando por el nodo 6 es:" << std::endl;
+
+    g.DFS(6);
 
     return 0;
 }
